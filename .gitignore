@@ -1,0 +1,19 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# Virtual envs and local env files
+.venv/
+venv/
+.env
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Tool outputs
+Dumby/Boxxed_Data/
+

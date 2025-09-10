@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    
+    
+
+    {
+      "type": "debugpy",
+      "request": "launch",
+      "name": "Run ai_metadata_parser.py",
+      "program": "${workspaceFolder}/${input:pythonFile}"
+    }
+  ],
+  "inputs": [
+    {
+      "type": "pickString",
+      "id": "pythonFile",
+      "description": "Select the Python file to debug",
+      "options": [
+        "ai_metadata_parser.py",
+        "export_metadata_to_csv.py"
+      ]
+    }
+  ]
+}
