@@ -29,7 +29,7 @@ except Exception:
 
 # ----------------------- Persistent Rules -----------------------
 # Default rules path inside Dumby/Boxxed_Data/Rules
-RULES_DEFAULT_PATH = str(Path(__file__).resolve().parents[1] / "Boxxed_Data" / "Rules" / "export_rules.json")
+RULES_DEFAULT_PATH = str(Path(__file__).resolve().parents[1] / "Boxxed_Data" / "00_Rules" / "export_rules.json")
 
 RulesType = Dict[str, Any]
 

@@ -5,7 +5,7 @@ import json
 
 # Default rules path inside Dumby/Boxxed_Data/Rules
 _DUMBY_ROOT = Path(__file__).resolve().parents[2]
-RULES_DEFAULT_PATH = str(_DUMBY_ROOT / "Boxxed_Data" / "Rules" / "export_rules.json")
+RULES_DEFAULT_PATH = str(_DUMBY_ROOT / "Boxxed_Data" / "00_Rules" / "export_rules.json")
 
 RulesType = Dict[str, Any]
 

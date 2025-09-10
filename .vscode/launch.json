@@ -1,25 +1,26 @@
 {
   "version": "0.2.0",
   "configurations": [
-    
-    
-
     {
       "type": "debugpy",
       "request": "launch",
-      "name": "Run ai_metadata_parser.py",
-      "program": "${workspaceFolder}/${input:pythonFile}"
-    }
-  ],
-  "inputs": [
+      "name": "Run Unified Menu (main.py)",
+      "program": "${workspaceFolder}/Dumby/Bulked_AI/main.py",
+      "args": ["--interactive"]
+    },
     {
-      "type": "pickString",
-      "id": "pythonFile",
-      "description": "Select the Python file to debug",
-      "options": [
-        "ai_metadata_parser.py",
-        "export_metadata_to_csv.py"
-      ]
+      "type": "debugpy",
+      "request": "launch",
+      "name": "Run Pipeline (aimeta.py)",
+      "program": "${workspaceFolder}/Dumby/Bulked_AI/aimeta.py",
+      "args": ["--interactive"]
+    },
+    {
+      "type": "debugpy",
+      "request": "launch",
+      "name": "Run Export (meta2csv.py)",
+      "program": "${workspaceFolder}/Dumby/Bulked_AI/meta2csv.py",
+      "args": ["--interactive"]
     }
   ]
 }

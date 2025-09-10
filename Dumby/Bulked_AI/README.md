@@ -5,21 +5,22 @@ Structure
 - Dumby/Run_AI_Toolkit.bat: single Windows launcher (double-clickable)
 - Dumby/Bulked_AI: all Python sources
 - Dumby/Boxxed_Data: all outputs (created as needed)
-  - Batches: filelist_*.txt, metadata_batch_*.json (ExifTool)
-  - NDJSON: structured_metadata*.ndjson
-  - PerFile_JSON: per-image JSON entries (optional)
-  - CSV: exported tables
-  - RenameMap: rename maps (NDJSON/CSV)
+  - 01_Batches: filelist_*.txt, metadata_batch_*.json (ExifTool)
+  - 02_NDJSON: structured_metadata*.02_NDJSON
+  - 03_PerFile_JSON: per-image JSON entries (optional)
+  - 04_CSV: exported tables
+  - 05_RenameMap: rename maps (02_NDJSON/04_CSV)
 
 Quick Start (Interactive)
 1) Double-click: Dumby\Run_AI_Toolkit.bat
 2) Choose an action:
    - Process images (extract + normalize)
-   - Export (CSV / Rename Map / Fixed NDJSON)
+   - Export (04_CSV / Rename Map / Fixed 02_NDJSON)
    - Edit (Replace / Relocate / Delete)
 
 Notes
 - ExifTool is auto-detected/installed when needed (no admin required).
 - Defaults write under Dumby\Boxxed_Data with per-type subfolders.
-- Persistent rules are stored at Dumby\Boxxed_Data\Rules\export_rules.json.
+- Persistent 00_Rules are stored at Dumby\Boxxed_Data\00_Rules\export_00_Rules.json.
+
 
