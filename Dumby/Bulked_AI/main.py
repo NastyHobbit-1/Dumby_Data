@@ -46,11 +46,15 @@ def run_pipeline_interactive() -> None:
     # Root for all outputs
     work_dir = Path(ui.strip_quotes(ui.prompt_input("Output root directory (Boxxed_Data)", str(getattr(pipeline, "DEFAULT_BOX_DIR", Path.cwd() / "Boxxed_Data")))))
     work_dir.mkdir(parents=True, exist_ok=True)
-    batches_dir = work_dir / "Batches"
-    ndjson_dir = work_dir / "NDJSON"
-    perfile_dir = work_dir / "PerFile_JSON"
+    batches_dir = work_dir / "01_Batches"
+    ndjson_dir = work_dir / "02_NDJSON"
+    perfile_dir = work_dir / "03_PerFile_JSON"
+    csv_dir = work_dir / "04_CSV"
+    rename_dir = work_dir / "05_RenameMap"
     batches_dir.mkdir(parents=True, exist_ok=True)
     ndjson_dir.mkdir(parents=True, exist_ok=True)
+    csv_dir.mkdir(parents=True, exist_ok=True)
+    rename_dir.mkdir(parents=True, exist_ok=True)
 
     # Batch size selection
     bs_opts = [100, 500, 1000, 1500, 2000, 3000, 4000, 5000]
