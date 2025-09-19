@@ -6,7 +6,7 @@ Structure
 - Dumby/Bulked_AI: all Python sources
 - Dumby/Boxxed_Data: all outputs (created as needed)
   - 01_Batches: filelist_*.txt, metadata_batch_*.json (ExifTool)
-  - 02_NDJSON: structured_metadata*.02_NDJSON
+  - 02_NDJSON: structured_metadata*.ndjson
   - 03_PerFile_JSON: per-image JSON entries (optional)
   - 04_CSV: exported tables
   - 05_RenameMap: rename maps (02_NDJSON/04_CSV)
@@ -21,6 +21,6 @@ Quick Start (Interactive)
 Notes
 - ExifTool is auto-detected/installed when needed (no admin required).
 - Defaults write under Dumby\Boxxed_Data with per-type subfolders.
-- Persistent 00_Rules are stored at Dumby\Boxxed_Data\00_Rules\export_00_Rules.json.
+- Persistent 00_Rules are stored at Dumby\Boxxed_Data\00_Rules\export_rules.json.
 
 

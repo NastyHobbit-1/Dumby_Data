@@ -29,11 +29,11 @@ DEFAULT_PARSE_WORKERS = getattr(aimeta, "DEFAULT_PARSE_WORKERS", 4)
 # Dumby/
 #   Run_AI_Toolkit.bat
 #   Boxxed_Data/
-#     Batches/            (filelist_*.txt, metadata_batch_*.json)
-#     NDJSON/             (structured_metadata*.ndjson)
-#     PerFile_JSON/       (*.json per image if enabled)
-#     CSV/                (exports)
-#     RenameMap/          (map files)
+#     01_Batches/         (filelist_*.txt, metadata_batch_*.json)
+#     02_NDJSON/          (structured_metadata*.ndjson)
+#     03_PerFile_JSON/    (*.json per image if enabled)
+#     04_CSV/             (exports)
+#     05_RenameMap/       (map files)
 _DUMBY_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_BOX_DIR = _DUMBY_ROOT / "Boxxed_Data"
 DEFAULT_BATCHES_DIR = DEFAULT_BOX_DIR / "01_Batches"
